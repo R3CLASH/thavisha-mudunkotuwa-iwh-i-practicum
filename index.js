@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
     try {
         const resp = await axios.get(customObjectsUrl, { headers });
         const data = resp.data.results;
-        res.render('homepage', { title: 'Custom Objects | Integrating With HubSpot I Practicum', data });
+        res.render('homepage', { title: 'Thavisha and his Games', data });
     } catch (error) {
         console.error(error);
         res.status(500).send('Error retrieving custom object data');
