@@ -49,7 +49,6 @@ app.post('/update-cobj', async (req, res) => {
         }
     };
 
-    // The custom object's internal ID is 2-226592694 based on the URL in README.md
     const createUrl = 'https://api.hubapi.com/crm/v3/objects/2-226592694';
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
