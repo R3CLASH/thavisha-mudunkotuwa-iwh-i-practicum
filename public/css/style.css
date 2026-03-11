@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #ff7a59;
+    --primary-color: #ff8b6e;
     --primary-hover: #e05c3e;
     --secondary-color: #33475b;
     --background-color: #f5f8fa;
@@ -50,7 +50,7 @@ a {
 }
 
 /* Link button style for main navigation like "Add to this table" and "Return to homepage" */
-body > a {
+body>a {
     display: block;
     text-align: center;
     background: var(--surface-color);
@@ -62,7 +62,7 @@ body > a {
     border: 2px solid transparent;
 }
 
-body > a:hover {
+body>a:hover {
     transform: translateY(-2px);
     box-shadow: var(--hover-shadow);
     color: var(--primary-hover);
@@ -84,8 +84,15 @@ table {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 thead {
@@ -93,7 +100,8 @@ thead {
     color: #ffffff;
 }
 
-th, td {
+th,
+td {
     padding: 1rem 1.5rem;
     text-align: left;
 }
